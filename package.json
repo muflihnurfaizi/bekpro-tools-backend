@@ -1,10 +1,10 @@
 {
-  "name": "logapp",
+  "name": "backend-harpro",
   "version": "1.0.0",
-  "description": "webapp untuk mencatat pekerjaan yang sudah berlalu",
+  "description": "Backend",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
   "author": "muflih",
   "license": "MIT",
