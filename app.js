@@ -1,18 +1,20 @@
 //Require
 const express = require("express");
-const tasks = require("./routes/tasks");
+const works = require("./routes/works.routes");
 const app = express();
 const connectDB = require("./db/connect");
 require("dotenv").config();
 const notFound = require("./middleware/not-found");
 const errorHandlerMiddleware = require("./middleware/error-handler");
+const cors = require("cors");
 
 // middleware
 app.use(express.static("public"));
 app.use(express.json());
+app.use(cors({ origin: "http://localhost:3000" }));
 
 // routes
-app.use("/api/v1/tasks", tasks);
+app.use("/api/v1/works", works);
 app.use(notFound);
 app.use(errorHandlerMiddleware);
 const port = process.env.PORT || 5001;
