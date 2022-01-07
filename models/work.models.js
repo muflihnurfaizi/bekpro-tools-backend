@@ -35,5 +35,5 @@ WorkSchema.pre("save", function (next) {
   this.tanggal = dayjs(this.tanggal).locale("id").format("DD MMMM YYYY");
   next();
 });
-
+      
 module.exports = mongoose.model("Work", WorkSchema);

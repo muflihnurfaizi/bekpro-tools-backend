@@ -10,8 +10,8 @@ const cors = require("cors");
 
 // middleware
 app.use(express.static("public"));
-app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000" }));
+A;
+app.use(cors());
 
 // routes
 app.use("/api/v1/works", works);
