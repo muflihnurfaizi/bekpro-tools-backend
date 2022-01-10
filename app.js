@@ -10,6 +10,7 @@ const cors = require("cors");
 
 // middleware
 app.use(express.static("public"));
+app.use(express.json());
 app.use(cors());
 
 // routes
